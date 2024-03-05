@@ -1,0 +1,333 @@
+:root{
+    --orange: #FEA03C;
+    --green:  #00B53F;
+    --smt:.8rem;
+    --ash:#EBF2F7;
+    --bb-color: #EBF2F7;
+    --light-blue: #E1F5FD;
+ 
+}
+
+ul {
+    list-style: none;
+}
+
+.header-navigation{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 1;
+    z-index: 3;
+   
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+
+
+/* 
+
+COMPONENTS : BUTTONS
+*/
+
+.small-text{
+    font-size: .8rem;
+}
+.bg-mild-green{
+    background-color: #00B53F;
+}
+
+.color-green{
+    color:#00B53F ;
+}
+
+.bg-deep-green{
+    background-color: #00982C;
+}
+.bg-black{
+    background-color: black;
+}
+
+.orange{
+    color: var(--orange);
+}
+
+.bg-orange{
+    background-color: var(--orange);
+}
+
+.btn-orange{
+    background-color: var(--orange);
+    color: white;
+}
+
+.bb-color{
+    background-color: var(--ash);
+}
+
+
+.location{
+    position: relative;
+}
+
+.search-icon{
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+}
+.form-control{
+    outline: none;
+}
+
+/* .main{
+    display: grid;
+    grid-template-columns: 30% 68%;
+    gap: 1%;
+} */
+
+.main.container{
+    max-width: 1200px;
+    
+}
+
+.main{
+    position: relative;
+}
+
+.category-section-right{
+    width: 74%;
+}
+
+
+.category-icon img{
+    max-width: 2.3rem;
+}
+
+.category-text{
+    font-size: var(--smt);
+}
+.category-div >.d-flex{
+   gap: .5rem;
+}
+
+.categories-list:hover{
+    background-color: var(--ash);
+}
+
+.ed-sticky-category{
+    position: sticky;
+    top: 5rem;
+}
+.homepage-landscape-img{
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+.category-section-right .post-ads{
+    background-color: var(--orange);
+}
+
+.post-ads i {
+    font-size: 6rem;
+}
+
+.listing-cards {
+    gap: .5rem;
+}
+
+.circle {
+    position: relative;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #fff; /* Optional background color */
+    padding-top: 3px;
+  }
+
+.listing-cards .card{
+    position: relative;
+}
+
+.bookmark{
+    position: absolute;
+    bottom: 3.9rem;
+    right: 1rem;
+}
+
+.top-badge{
+    border-bottom-left-radius: 0;
+    font-size: 13px;
+}
+.quantity-badge{
+   
+    bottom: 5rem;
+    left: 0;
+    background-color: rgba(67, 55, 55,0.5);
+}
+
+.footer-navs_link a {
+    color: white;
+}
+
+.footer-navs_link a:hover{
+    color: #EBF2F7;
+}
+
+/* CATEGORIES PAGES */
+
+.categories_main{
+    margin-top: 6rem;
+}
+
+.list-unstyled a{
+    color: black;
+    text-decoration: none;
+}
+a.show_all{
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.display-sort{
+    display: flex;
+    flex-direction: row;
+}
+
+span.verified{
+    background-color: var(--light-blue);
+    font-size: .7rem;
+}
+.list_ads{
+    border-color: var(--green) !important;
+}
+
+/* single listing */
+.b-advert-item-wrapper{
+    width: 100%;
+}
+
+.b-advert-item-wrapper img {
+    width: 100%;
+}
+
+.next_image{
+    top: 50%;
+    right: 3%;
+}
+
+.last_image{
+    top: 50%;
+    left: 3%;
+}
+
+.image-count{
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(67,62,55, .4);
+}
+
+.make_offer > button:hover{
+    background-color: var(--green);
+
+}
+.seller_avatar{
+    line-height: 0;		/* remove line-height */ 
+	display: inline-block;	/* circle wraps image */
+	margin: 5px;
+
+	border-radius: 50%;	/* relative value */
+	/*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+	transition: linear 0.25s;
+
+}
+
+.seller_avatar img{
+    border-radius: 50%;	
+    height: 60px;
+  width: 60px;
+
+}
+.seller_info_body {
+    font-size: .8rem;
+}
+
+.order_list_style{
+    list-style: circle;
+}
+
+
+
+@media (max-width: 768px){
+
+    html{
+        font-size: 14px;
+    }
+
+    .sell-btn{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+
+    .location{
+        display: none;
+    }
+
+    .category-section-right{
+        width: 100%;
+    }
+    .footer-navs_link {
+        display: grid !important;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .location-text{
+        padding: 0 !important;
+        margin-top: 93px;
+        font-size: 11px;
+        margin-left: 26px;
+    }
+    .location-text >span {
+        font-size: 11px;
+    }
+    .site-logo{
+
+    }
+    .nav-link{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .nav-link button{
+        font-size: 1rem;
+    }
+
+
+
+    /* .footer_image{
+        height: 100px;
+        width: 100px;
+    } */
+   
+}
+
+@media (max-width: 576px){
+
+    .listing__card{
+        max-width: 10rem;
+    }
+    
+    .bookmark{
+        bottom: 5.5rem;
+    }
+    .quantity-badge{
+        bottom: 6.5rem;
+    }
+
+}
